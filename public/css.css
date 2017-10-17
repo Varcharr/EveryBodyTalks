@@ -1,0 +1,137 @@
+body{
+  background-color: #434398;
+  background: -webkit-linear-gradient(to left, #434398, #5555c1);
+  background: linear-gradient(to left, #434398, #5555c1);
+  font-family: Helvetica;
+
+}
+#title{
+  font-family: fantasy;
+  background-color: white;
+  padding: 2px 10px;
+}
+h1{
+  text-align: center;
+}
+h3{
+  font-family: fantasy;
+  font-weight: 200;
+  margin: 2px;
+}
+#user{
+  font-weight: bold;
+  font-size: 1.1em;
+}
+#error{
+  padding-bottom: 2px;
+}
+#container{
+  max-width: 900px;
+  margin: 0 auto;
+}
+#chatWindow{
+  height:60vh;
+  overflow: auto;
+  width: 100%;
+}
+#mainWrapper{
+  padding-top: 2px;
+  display: none;
+  margin: 0 auto;
+}
+#chatWrapper{
+  float: left;
+  width: 70%;
+  border: 1px solid gray;
+  border-radius: 10px;
+  background-color: #f4f4f4;
+  padding: 10px;
+  margin: 0 auto;
+}
+#userWrapper{
+  float: left;
+  text-align: center;
+  overflow: auto;
+  border: 1px solid gray;
+  border-radius: 10px;
+  background-color: #f4f4f4;
+  padding: 10px;
+  width:22%;
+  max-height: 600px;
+  margin-left: 20px;
+}
+#namesWrapper{
+  max-width: 400px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  background-color: #f4f4f4;
+  padding: 10px;
+  margin:0 auto;
+}
+input{
+  height: 30px;
+  width: 100%;
+}
+
+input[type="text"]{
+  -moz-box-sizing: border-box;
+box-sizing: border-box
+}
+input[type=submit]{
+  font-family: fantasy;
+  font-weight: 200;
+  margin-top: 3px;
+  font-size: 1em;
+}
+#feedback{
+  margin-top: 5px;
+  color: gray;
+  height: 2.25em;
+  line-height: 1.25;
+}
+#feedback p{
+  font-size: 1.10em;
+  padding: 0px;
+  padding-left: 3px;
+  margin: 0px;
+  border: 0px;
+}
+hr{
+  border-color:rgba(255, 0, 0, 0.1);
+}
+.dont-break-out {
+  /* These are technically the same, but use both */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  word-break: break-all;
+  /* Instead use this non-standard one: */
+  word-break: break-word;
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+::-moz-selection { background: yellow; }
+::selection { background: yellow; }
+@media only screen and (max-width: 820px) {
+
+    #userWrapper {
+      width: 94%;
+      float: none;
+      margin: 10px auto;
+    }
+    #chatWrapper{
+      float: none;
+      margin: 0 auto;
+      width: 94%;
+    }
+    #mainWrapper{
+      width: 100%;
+    }
+    #chatWindow{
+      height: 60vh;
+    }
+}

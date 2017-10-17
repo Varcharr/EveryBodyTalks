@@ -1,0 +1,18 @@
+{
+  "name": "everybodytalks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start":"node app.js"
+  },
+  "author": "Marko Gruborovic",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.4",
+    "socket.io": "^2.0.3"
+  },
+  "engines":{
+    "node":"6.11.2"
+  }
+}

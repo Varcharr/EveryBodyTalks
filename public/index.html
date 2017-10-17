@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Everybody talkS</title>
+    <link type="text/css" rel="stylesheet" href="/css.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Marko Gruborovic">
+  </head>
+  <body>
+    <div id="container">
+      <h1 ><span id="title">Everybody talks</span></h1>
+      <div id="namesWrapper">
+
+        <p>Create username</p>
+        <div id="error">
+        </div>
+        <form id="usernameForm">
+          <input required pattern="\S+" title="Please fill out this field. No whitespaces allowed! :D" type="text" size="35" id="username">
+          <input type="submit" name="" value="Submit">
+        </form>
+      </div>
+
+      <div id="mainWrapper">
+
+          <div id="chatWrapper">
+              <div class="dont-break-out" id="chatWindow">
+              </div>
+              <div id="feedback">
+              </div>
+            <form id="messageForm">
+              <input required pattern=".*\S+.*" autocomplete="off" type="text" size="35" id="message" placeholder="Type your message">
+              <input type="submit" value="SEND">
+            </form>
+          </div>
+
+        <div id="userWrapper">
+          <h3>Users:</h3>
+          <div id="users">
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/chat.js"></script>
+  </body>
+</html>
